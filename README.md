@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -18,3 +19,9 @@ If you are developing a production application, we recommend using TypeScript wi
 =======
 # My-Finance-Tracker
 >>>>>>> 8dec845dca15701970dde54d9dfd839f2cbb4a06
+=======
+# My Finance Tracker
+
+## Overview
+...
+>>>>>>> 023a3e4bcd76c46a9481cabc24d9e213acbfb2fa
