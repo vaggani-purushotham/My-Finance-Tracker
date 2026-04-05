@@ -12,10 +12,11 @@ export default function Transactions({ data }) {
       <h2 className="text-lg font-bold mb-2">Transactions</h2>
 
       <input
-        type="text"
-        placeholder="Search category..."
-        className="border p-2 mb-3 w-full"
-        onChange={(e) => setSearch(e.target.value)}
+      type="text"
+      placeholder="Search category..."
+      value={search}
+      onChange={(e) => setSearch(e.target.value)}
+      className="border p-2 mb-3 w-full text-black dark:text-white bg-white dark:bg-gray-700"
       />
 
       {filtered.length === 0 ? (
