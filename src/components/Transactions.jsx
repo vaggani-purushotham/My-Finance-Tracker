@@ -21,26 +21,31 @@ export default function Transactions({ data }) {
       {filtered.length === 0 ? (
         <p>No Data Found</p>
       ) : (
-        <table className="w-full border">
-          <thead>
-            <tr className="bg-gray-200 dark:bg-gray-700">
-              <th>Date</th>
-              <th>Amount</th>
-              <th>Category</th>
-              <th>Type</th>
-            </tr>
-          </thead>
-          <tbody>
-            {filtered.map((t) => (
-              <tr key={t.id} className="text-center">
-                <td>{t.date}</td>
-                <td>₹{t.amount}</td>
-                <td>{t.category}</td>
-                <td>{t.type}</td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
+        <table className="w-full border border-gray-400 dark:border-gray-500">
+
+  <thead>
+    <tr className="bg-gray-200 dark:bg-gray-700">
+      <th>Date</th>
+      <th>Amount</th>
+      <th>Category</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+
+      <tbody className="divide-y divide-gray-400 dark:divide-gray-500">
+
+      {filtered.map((t) => (
+    <tr
+      key={t.id}
+      className="text-center hover:bg-gray-200 dark:hover:bg-gray-600 transition">
+        <td className="py-3">{t.date}</td>
+        <td className="py-3">₹{t.amount}</td>
+        <td className="py-3">{t.category}</td>
+        <td className="py-3">{t.type}</td>
+      </tr>
+    ))}
+    </tbody>
+    </table>
       )}
     </div>
   );
